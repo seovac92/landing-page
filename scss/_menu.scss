@@ -1,0 +1,104 @@
+// desktop nav
+.nav,
+.btn-register{
+    display: none;
+}
+
+// mobile menu
+.menu-btn{
+    position: fixed;
+    z-index: 1;
+    right: 5%;
+    top: 4%;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+
+    .hamburger{
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 28px;
+        height: 3px;
+        background: black;
+        @include transition-ease;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: black;
+            @include transition-ease;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 28px;
+            height: 3px;
+            background: black;
+            @include transition-ease;
+        }
+
+        &.open{
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before{
+                transform: rotate(45deg) translate(5px,8px);
+            }
+            &::after{
+                transform: rotate(-45deg) translate(3px,-7px);
+            }
+        }
+    }
+}
+.mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    visibility: hidden;
+
+    &.open{
+        visibility: visible;
+    }
+    .mob-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 100vh;
+        background-color: $head-bg;
+        list-style: none;
+        padding: 0;
+        transform: translateY(-100%);
+        @include transition-ease;
+
+        &.open{
+            transform: translateY(0);
+        }
+
+        &-item{
+            font-size: 24px;
+            font-weight: 500;
+            color: $link-txt;
+            padding: 10px;
+            text-align: center;
+        }
+        .btn-register-mob{
+            color: $signup-btns-bg;
+
+            
+        }
+    }
+}
+.blue-btn{
+    @include blue-btn;
+    border-radius: 8px;
+    margin-top: 20px;
+}

@@ -1,0 +1,49 @@
+header{
+    background-color: $head-bg;
+    margin-bottom: 70px;
+
+    .navigation{
+        padding-top: 5%;
+        margin-bottom: 10%;
+
+        
+    }
+    .header-content{
+        h1{
+            color: $h1-txt;
+            font-size: $h1-herosubt-01-blue-numsb;
+            font-weight: 500;
+        }
+        :nth-child(2){
+            color: $hero-title;
+            font-size: $big-txt/1.5;
+            font-weight: 700;
+        }
+        :nth-child(3){
+            color: $general-subt-color;
+            font-size: $h1-herosubt-01-blue-numsb;
+            text-transform: capitalize;
+        }
+        .blue-btn{
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+    }
+}
+.logo{
+    width: fit-content;
+
+    img{
+        width: 107px;
+    }
+}
+.house-illustration{
+    display: flex;
+    justify-content: flex-end;
+
+    img{
+        display: inline-block;
+        width: 60%;
+        margin-top: 20%;
+    }
+}

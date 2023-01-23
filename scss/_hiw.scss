@@ -1,0 +1,13 @@
+.hiw-top{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.hiw-middle{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .icon{
+        text-align: center;
+    }
+}
