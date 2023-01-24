@@ -1,3 +1,5 @@
+// ------------------------mobile
+
 .feature01{
     margin: 150px auto 50px;
     background-color: $bg-01;
@@ -53,3 +55,27 @@
         }
     }
 }    
+// ------------------------desktop
+
+@include media-desktop{
+    .feature01{
+
+        .f01-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 20px;
+
+            &-left{
+                margin-bottom: 0;
+            }
+            &-right{
+                margin-bottom: 0;
+            }
+        }
+        .f01-central{
+            display: flex;
+            gap: 30px;
+        }
+    }
+}

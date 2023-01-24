@@ -1,3 +1,5 @@
+//-----------------------mobile
+
 .feature02{
     margin: 150px auto;
 
@@ -10,9 +12,10 @@
             flex-direction: column;
 
             .users{
-                padding: 0 35px;
+                padding: 10px;
                 box-shadow: 90px 85px 100px rgba(0, 0, 0, 0.06);
                 border-radius: 0px 0px 12px 12px;
+                height: fit-content;
 
                 :nth-child(1){
                     display: flex;
@@ -32,7 +35,7 @@
                     margin: 15px auto;
                 }
                 :nth-child(4){
-                    transform: translateX(-20px);
+                    transform: translateX(-10px);
                 }
             }
             .f02-img{
@@ -66,6 +69,46 @@
         .num-subt{
             color: $bottom-02-subtitle;
             font-size: $h1-herosubt-01-blue-numsb;
+        }
+    }
+}
+
+//-----------------------desktop
+
+@include media-desktop{
+    .feature02{
+        
+        .f02-top{
+            flex-direction: row;
+            align-items: center;
+            
+            &-left{
+                position: relative;
+                flex-basis: 60%;
+                flex-direction: row;
+
+                .users{
+                    position: absolute;
+                    width: 35%;
+                    background-color: $white-color;
+
+                    .users-img{
+                        width: 85%;
+                    }
+                }
+                .f02-img{
+                    width: 50vw;
+                    z-index: -1;
+                    transform: translate(15px,-40px);
+                }
+            }
+            &-right{
+                flex-basis: 40%;
+                margin-bottom: 200px;
+            }  
+        }
+        .f02-bottom{
+            transform: translateY(-150px);
         }
     }
 }
