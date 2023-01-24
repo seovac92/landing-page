@@ -1,4 +1,6 @@
+// ------------mobile
 .hiw{
+    perspective: 600px;
     .hiw-top{
         text-align: center;
         margin-bottom: 40px;
@@ -15,20 +17,45 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 50px;
+        transform-style: preserve-3d;
 
         .icon{
             text-align: center;
             color: $guides-txt;
             font-size: $guides-01-foot-title;
             font-weight: 500;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            @include transition-ease;
 
             .guide{
                 font-size: $nav-guides-01-foot-copy;
                 color: $blue-txt;
             }
         }
+        .icon:hover{
+            transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-10deg);
+            box-shadow: -5px 5px 5px 5px #0005;
+            opacity: 0.8;
+        }
     }
     .blue-btn{
         margin: 50px auto;
+    }
+}
+
+//--------------desktop
+
+@include media-desktop{
+    .hiw{
+
+        .hiw-top{
+            width: 50%;
+            margin: 20px auto;
+        }
+        .hiw-middle{
+            justify-content: space-around;
+        }
     }
 }

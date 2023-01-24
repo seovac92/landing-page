@@ -91,11 +91,11 @@
             color: $link-txt;
             padding: 10px;
             text-align: center;
+            cursor: pointer;
         }
         .btn-register-mob{
             color: $signup-btns-bg;
 
-            
         }
     }
 }
@@ -137,6 +137,7 @@
             &-item{
                 font-size: $nav-guides-01-foot-copy;
                 font-weight: 500;
+                line-height: $lh-nav-foot;
                 color: $link-txt;
                 padding: 15px;
                 cursor: pointer;
@@ -150,10 +151,12 @@
                 color: $signup-btns-bg;
                 font-size: $nav-guides-01-foot-copy;
                 font-weight: 500;
+                line-height: $lh-nav-foot;
             }
 
             .blue-btn{
                 margin: 0 0 0 20px;
+                line-height: $lh-nav-foot;
             }
         }
     }

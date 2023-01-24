@@ -137,6 +137,7 @@ body {
   color: #4f5361;
   padding: 10px;
   text-align: center;
+  cursor: pointer;
 }
 .mobile .mob-menu .btn-register-mob {
   color: #0f1b4c;
@@ -180,6 +181,7 @@ body {
   .navigation .menu-item {
     font-size: 14px;
     font-weight: 500;
+    line-height: 21px;
     color: #4f5361;
     padding: 15px;
     cursor: pointer;
@@ -192,9 +194,11 @@ body {
     color: #0f1b4c;
     font-size: 14px;
     font-weight: 500;
+    line-height: 21px;
   }
   .navigation .btn-register .blue-btn {
     margin: 0 0 0 20px;
+    line-height: 21px;
   }
 }
 header {
@@ -209,6 +213,7 @@ header .header-content h1 {
   color: #687690;
   font-size: 18px;
   font-weight: 500;
+  line-height: 27px;
 }
 header .header-content :nth-child(2) {
   color: #000336;
@@ -254,6 +259,10 @@ header .header-content .blue-btn {
   }
   header .header-content :nth-child(2) {
     font-size: 64px;
+    line-height: 76px;
+  }
+  header .header-content :nth-child(3) {
+    line-height: 32px;
   }
   header .house-illustration {
     flex-basis: 50%;
@@ -311,6 +320,9 @@ header .header-content .blue-btn {
     flex-direction: row;
   }
 }
+.hiw {
+  perspective: 600px;
+}
 .hiw .hiw-top {
   text-align: center;
   margin-bottom: 40px;
@@ -329,23 +341,42 @@ header .header-content .blue-btn {
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+  transform-style: preserve-3d;
 }
 .hiw .hiw-middle .icon {
   text-align: center;
   color: #353c45;
   font-size: 20px;
   font-weight: 500;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .hiw .hiw-middle .icon .guide {
   font-size: 14px;
   color: #0689ff;
 }
+.hiw .hiw-middle .icon:hover {
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-10deg);
+  box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.3333333333);
+  opacity: 0.8;
+}
 .hiw .blue-btn {
   margin: 50px auto;
 }
 
+@media screen and (min-width: 992px) {
+  .hiw .hiw-top {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .hiw .hiw-middle {
+    justify-content: space-around;
+  }
+}
 .feature01 {
-  margin: 150px auto 50px;
+  margin: 150px auto;
   background-color: #f5fafe;
   padding: 50px 0;
 }
@@ -356,6 +387,10 @@ header .header-content .blue-btn {
   margin-bottom: 50px;
   color: #0689ff;
   cursor: pointer;
+}
+.feature01 .f01-central {
+  width: 80%;
+  margin: 0 auto;
 }
 .feature01 .f01-central .img {
   width: 85%;
@@ -408,6 +443,7 @@ header .header-content .blue-btn {
   .feature01 .f01-central {
     display: flex;
     gap: 30px;
+    width: 100%;
   }
 }
 .feature02 {
@@ -509,6 +545,7 @@ header .header-content .blue-btn {
   }
   .feature02 .f02-bottom {
     transform: translateY(-150px);
+    justify-content: space-between;
   }
 }
 .newsletter {
@@ -573,6 +610,7 @@ footer .central ul li {
   color: #7a7a7e;
   font-size: 16px;
   padding: 8px 0;
+  cursor: pointer;
 }
 footer .central ul .social-icons img {
   margin-right: 20px;
@@ -595,26 +633,26 @@ footer .bottom p {
   }
 }
 .big-wrapper {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 .medium-wrapper {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 .small-wrapper {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {
   .medium-wrapper {
-    width: 80%;
+    width: 75%;
   }
   .small-wrapper {
-    width: 45%;
+    width: 70%;
   }
 }
 .h2-title {
@@ -625,4 +663,5 @@ footer .bottom p {
 .subtitle {
   color: #5a6473;
   font-size: 16px;
+  line-height: 30px;
 }/*# sourceMappingURL=main.css.map */

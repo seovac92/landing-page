@@ -13,6 +13,7 @@ header{
             color: $h1-txt;
             font-size: $h1-herosubt-01-blue-numsb;
             font-weight: 500;
+            line-height: $lh-h1-01-blue-txt;
         }
         :nth-child(2){
             color: $hero-title;
@@ -64,6 +65,10 @@ header{
 
             :nth-child(2){
                 font-size: $big-txt;
+                line-height: $lh-big-txt;
+            }
+            :nth-child(3){
+                line-height: $lh-herosubt;
             }
         }
         .house-illustration{

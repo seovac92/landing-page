@@ -1,7 +1,7 @@
 // ------------------------mobile
 
 .feature01{
-    margin: 150px auto 50px;
+    margin: 150px auto;
     background-color: $bg-01;
     padding: 50px 0;
 
@@ -16,6 +16,8 @@
         }
     }
     .f01-central{
+        width: 80%;
+        margin: 0 auto;
         .img{
             width: 85%;
             margin: 20px auto;
@@ -76,6 +78,7 @@
         .f01-central{
             display: flex;
             gap: 30px;
+            width: 100%;
         }
     }
 }
