@@ -3,12 +3,20 @@
 @import './header';
 @import './clients-logo';
 @import './hiw';
-@import './responsive';
+@import './f01';
+@import './f02';
+@import './newsletter';
+@import './footer';
 
 
 
-// wrapper size
+// wrapper size--------------mobile
+
 .big-wrapper{
+    width: $big-wrapper;
+    margin: 0 auto;
+}
+.medium-wrapper{
     width: $big-wrapper;
     margin: 0 auto;
 }
@@ -16,6 +24,16 @@
     width: $big-wrapper;
     margin: 0 auto;
 }
+// wrapper size--------------desktop
+@include media-desktop{
+    .medium-wrapper{
+        width: $medium-wrapper;
+    }
+    .small-wrapper{
+        width: $small-wrapper;
+    }
+}
+
 .h2-title{
     color: $h2-title;
     font-size: $general-title-size;

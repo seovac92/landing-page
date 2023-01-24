@@ -1,0 +1,55 @@
+.feature01{
+    margin: 150px auto 50px;
+    background-color: $bg-01;
+    padding: 50px 0;
+
+    .f01-top{
+        &-left{
+            margin-bottom: 30px;
+        }
+        &-right{
+            margin-bottom: 50px;
+            color: $blue-txt;
+            cursor: pointer;
+        }
+    }
+    .f01-central{
+        .img{
+            width: 85%;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+
+            .prop-img{
+                width: 100%;
+            }
+            .info{
+                padding: 15px;
+
+                .price{
+                    color: $h2-title;
+                    font-size: $guides-01-foot-title;
+                    font-weight: 600;
+                }
+                .adress{
+                    color: $img-01-title;
+                    font-size: $nav-guides-01-foot-copy;
+                    font-weight: 500;
+                }
+                .icons{
+                    display: flex;
+                    color: $img-01-rest;
+                    font-size: $nav-guides-01-foot-copy;
+                    margin-top: 20px;
+
+                    :nth-child(1){
+                        color: $img-01-beds;
+                    }
+                    p{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}    

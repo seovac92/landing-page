@@ -77,7 +77,6 @@ $news-bg: #063183;
 $news-btn-txt: #002366;
 $footer-title: #1c1c1d;
 
-
 // font variables
 $primary-font: 'Poppins';
 $secondary-font: 'Lato';
@@ -128,18 +127,8 @@ body{
 
 // media query
 
-@mixin media-md{
-    @media screen and (min-width: 768px) {
-        @content;
-    }
-}
-@mixin media-lg{
-    @media screen and (min-width: 1024px) {
-        @content;
-    }
-}
-@mixin media-xl{
-    @media screen and (min-width: 1600px) {
+@mixin media-desktop{
+    @media screen and (min-width: 992px) {
         @content;
     }
 }
@@ -152,5 +141,12 @@ body{
   background-color: $signup-btns-bg;
   color: $white-color;
   padding: 10px 20px;
+  cursor: pointer;
+}
+@mixin line-above{
+  display: block;
+  width: 41px;
+  height: 4px;
+  border-radius: 12px;
 }
 

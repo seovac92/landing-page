@@ -1,0 +1,40 @@
+footer{
+    .central{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-bottom: 50px;
+
+        h3{
+            color: $footer-title;
+            font-family: 'Lato';
+            font-size: $guides-01-foot-title;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        ul{
+            list-style: none;
+            
+            li{
+                color: $footer-list;
+                font-size: $general-subtitle-size;
+                padding: 8px 0;
+            }
+            .social-icons{
+                img{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            color: $footer-copy-txt;
+            font-size: $nav-guides-01-foot-copy;
+        }
+    }
+}

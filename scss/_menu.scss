@@ -1,3 +1,4 @@
+// -----------------------mobile
 // desktop nav
 .nav,
 .btn-register{
@@ -7,7 +8,7 @@
 // mobile menu
 .menu-btn{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     right: 5%;
     top: 4%;
     height: 20px;
@@ -62,6 +63,7 @@
     left: 0;
     width: 100vw;
     visibility: hidden;
+    z-index: 1;
 
     &.open{
         visibility: visible;
@@ -101,4 +103,58 @@
     @include blue-btn;
     border-radius: 8px;
     margin-top: 20px;
+}
+
+// -----------------------desktop
+
+@include media-desktop{
+    .menu-btn,
+    .mobile{
+        display: none;
+    }
+    .nav,
+    .btn-register{
+        display: flex;
+        align-items: center;
+    }
+    .navigation{
+        display: grid;
+        grid-template-columns: 1fr 5fr 2fr;
+
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+
+        .menu{
+            display: flex;
+            list-style: none;
+
+            :nth-child(1){
+                margin-left: 25px;
+            }
+
+            &-item{
+                font-size: $nav-guides-01-foot-copy;
+                font-weight: 500;
+                color: $link-txt;
+                padding: 15px;
+                cursor: pointer;
+            }
+        }
+        .btn-register{
+            justify-content: flex-end;
+            cursor: pointer;
+
+            .btn-sign{
+                color: $signup-btns-bg;
+                font-size: $nav-guides-01-foot-copy;
+                font-weight: 500;
+            }
+
+            .blue-btn{
+                margin: 0 0 0 20px;
+            }
+        }
+    }
 }

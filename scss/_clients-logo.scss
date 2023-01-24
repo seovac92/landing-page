@@ -1,3 +1,5 @@
+// -------------------mobile
+
 .clients-logo{
     margin-bottom: 100px;
 }
@@ -31,6 +33,23 @@
         margin: 10px auto;
         border-radius: 12px;
         box-shadow: 0px 45px 80px rgba(0, 0, 0, 0.04);
+    }
+}
+
+// -------------------desktop
+
+@include media-desktop{
+    .client-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left{
+            margin-bottom: 0;
+        }
+    }
+    .client-bottom{
+        flex-direction: row;
     }
 }
 
