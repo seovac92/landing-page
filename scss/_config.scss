@@ -132,6 +132,11 @@ body{
         @content;
     }
 }
+@mixin media-large{
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
 
 @mixin transition-ease{
   transition: all 0.5s ease-in-out;
