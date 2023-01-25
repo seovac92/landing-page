@@ -75,6 +75,8 @@ header{
             flex-basis: 50%;
             img{
                 width: 100%;
+                height: fit-content;
+                align-self: flex-end;
                 margin-top: 0;
             }
         }
